@@ -1,3 +1,93 @@
 body {
-	#site.size(10px);
+	//#site.size(10px);
+	.mixin-headings(
+		@font-family: @square, 
+		@font-size: 18px, 
+		@line-height: 24px,
+		@color: @black);
+}
+a{
+	color: @blue;
+	&:hover,
+	&:focus{
+		color: darken(@blue, 10%);
+	}
+}
+h3{
+	.mixin-headings(
+		@font-family: @square-medium, 
+		@font-size: 24px, 
+		@line-height: 32px,
+		@color: @black);
+
+}
+p + h3,
+div + h3{
+	margin: 25px 0 10px;
+}
+.btn-white-nobg{
+	border: 1px solid @white;
+	background: none;
+	outline: none;
+	.mixin-headings(
+		@font-family: @square-medium, 
+		@font-size: 15px, 
+		@line-height: 20px,
+		@color: @white);
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	transition: all 0.2s ease-out;
+	text-decoration: none;
+	&:hover{
+		color: lighten(@black, 13.8%);
+		text-decoration: none;
+		background: @white;
+	}
+}
+.btn-blue-nobg{
+	border: 1px solid @blue;
+	background: none;
+	outline: none;
+	.mixin-headings(
+		@font-family: @square, 
+		@font-size: 14px, 
+		@line-height: 36px,
+		@color: @blue);
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	transition: all 0.2s ease-out;
+	text-decoration: none;
+	&:before{
+		transition: all 0.2s ease-out;
+	}
+	&:hover{
+		//color: lighten(@black, 13.8%);
+		text-decoration: none;
+		//background: @white;
+	}
+}
+.btn-blue{
+	background: @blue;
+	border: none;
+	outline: none;
+	.mixin-headings(
+		@font-family: @square-medium, 
+		@font-size: 18px, 
+		@line-height: 36px,
+		@color: @white);
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	transition: all 0.2s ease-out;
+	&:hover{
+		background: darken(@blue, 10%);
+	}
 }

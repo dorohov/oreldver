@@ -1,9 +1,54 @@
 @url-site:'';
-@url-path:'./..';
+@url-path:'';
 @url-path-css:'@{url-path}/css';
 @url-path-fonts:'@{url-path}/fonts';
 @url-path-img:'@{url-path}/img';
 @url-path-js:'@{url-path}/js';
+
+@media-size-xxs: ~"(max-width: 480px)";
+@media-size-xs: ~"(max-width: 767px)";
+@media-no-phone: ~"(min-width: 768px)";
+@media-size-sm: ~"(min-width: 768px) and (max-width: 991px)";
+@media-size-sm-p: ~"(min-device-width: 768px) and (max-device-width: 1280px) and (orientation:portrait)";
+//@media-size-sm-p: ~"(min-width: 768px) and (max-width: 991px) and (orientation:portrait)";
+//@media-size-sm-l: ~"(min-width: 768px) and (max-width: 1280px) and (orientation:landscape)";
+@media-size-sm-l: ~"(min-device-width: 768px) and (max-device-width: 1280px) and (orientation:landscape)";
+@media-size-md: ~"(min-width: 992px) and (max-width: 1199px)";
+@media-size-lg: ~"(min-width: 1200px) and (max-width: 1399px)";
+@media-size-xl: ~"(min-width: 1400px)";
+@media-screen: ~"(min-width: 992px)";
+@media-device: ~"(max-width: 991px)";
+@media-size-portrait: ~"all and (orientation:portrait)";
+@media-size-landscape: ~"all and (orientation:landscape)";
+@media-size-retina: ~"all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-ms-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)";
+@media-size-print: ~"print";
+@media-screen-hsmall: ~"(min-height: 500px) and (max-height: 800px) and (min-width: 1000px)";
+@media-screen-hbig: ~"(min-height: 801px) and (max-height: 969px) and (min-width: 1700px)";
+@media-screen-h1080: ~"(min-height: 970px) and (min-width: 1000px)";
+@media-screen-notebook: ~"(min-width: 1300px) and (min-height: 650px) and (max-width: 1366px) and (max-height: 768px)";
+@media-screen-WSXGA900: ~"(min-width: 1370px) and (min-height: 780px) and (max-width: 1600px) and (max-height: 900px)";
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@white: #ffffff;
+@black: #000000;
+@blue: rgb(13, 124, 201);
+
+
+@green-line: rgb(74, 233, 145);
+@green: rgb(39, 116, 63);
+@grey-line: rgb(151, 112, 34);
+@grey: rgb(119, 83, 12);
+
 
 #site {
 	

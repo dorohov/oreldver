@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-
-<title>FE CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		<meta charset="utf-8">	
+<title>oreldver.ru</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!--
-<meta name="document-state" content="Dynamic" />
-<meta name="resource-type" content="document" />
--->
-
 <meta HTTP-EQUIV="Cache-Control" content="no-cache" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
 <link type="image/x-icon" href="/favicon.ico" rel="icon" />
 
-<link href="/css/site.css?update=201511050936" rel="stylesheet">
-
-<!--
-<link rel="stylesheet/less" type="text/css" href="/css/site.less?update=201509210901" />
-<script src="/js/less.min.js"></script>
--->
-
-<!--
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
--->
+<link href="/css/site.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -35,109 +18,251 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-
 <script src="/js/jquery.min.js" ></script>
-<script src="/js/fecss.js" ></script>
+
+<script src="/js/bootstrap.min.js" ></script>
 <script src="/js/storage.js" ></script>
-<script src="/js/style-editable.js" ></script>
-
-<script src="/js/jquery-plugin/jquery.jqfeChangeClassEvent.js" ></script>
-<script src="/js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
-
-<!--
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
--->
+<script src="/js/device.min.js" ></script>
 
 <script src="/js/document-ready.js" ></script>
-
-</head>
-<body class="fecss full-height fe-dbg outline " >
-	
-	<div class="full-screen active semi-dark  page-loader " >
-	<div class="at-center" >
-		<div class="middle" >
-			<!--<img src="/img/helper/ajax-loader@2x.gif" />-->
-			<div class="process-container" ><div class="process-level" ></div>идет загрузка...</div>
-			<a class="close-loader" href="#not-lazyload" >не ждать</a>
+	</head>
+	<body>
+		<header class="header-block">
+	<div class="_hb__flex">	
+		<div class="_hb__logotip">
+			<a href="/"><img src="/img/logotip.jpg" alt=""> Вскрытие, ремонт и замена замков в г. Орле</a>
+		</div>
+		<div class="_hb__right-col">
+			<div class="_hb__time hidden-xs"><img src="/img/icon/icon-time.png" alt=""> Приедем за 15 минут</div>
+			<div class="_hb__work hidden-xs"><img src="/img/icon/icon-work.png" alt=""> Работаем круглосуточно</div>
+			<div class="_hb__phone"><img src="/img/icon/icon-phone-blue.png" alt=""> <a href="tel:+74862781431">+7 (4862) 78-14-31;</a> <a href="tel:+79036371431">+7 (903) 637-14-31</a></div>
 		</div>
 	</div>
-</div>
-	
-	<div class="fluid-block " >
-		<div class="adaptive-block grid grid-12 " >
-			<div class="grid-row" >
-				
-				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</header>
+
+		<div class="service-block" style="height: 980px;">
+	<div class="_sb__flex">
+		<div class="_sb__item item-doors">
+			<div class="_sb__item-preview" style="background-image: url(/img/index/bg-service-doors.jpg);"></div>
+			<div class="_sb__item-heading">Вскрытие замков</div>
+			<div class="_sb__item-btn">
+				<a class="btn-white-nobg" href="#service-doors">подробнее</a>
+			</div>
+		</div>
+		<div class="_sb__item item-repair">
+			<div class="_sb__item-preview" style="background-image: url(/img/index/bg-service-repair.jpg);"></div>
+			<div class="_sb__item-heading">Замена и ремонт замков</div>
+			<div class="_sb__item-btn">
+				<a class="btn-white-nobg" href="#service-repair">подробнее</a>
+			</div>
+		</div>
+		<div class="_sb__item item-car">
+			<div class="_sb__item-preview" style="background-image: url(/img/index/bg-service-car.jpg);"></div>
+			<div class="_sb__item-heading">Вскрытие автомобилей</div>
+			<div class="_sb__item-btn">
+				<a class="btn-white-nobg" href="#service-car">подробнее</a>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+		<div class="service-doors service-item" id="service-doors">
+	<div class="container">
+		<div class="_sb-i__flex">			
+			<div class="_sb-i__content _sb-i__left">
+				<h2 class="_sb-i__heading">Вскрытие замков дверей</h2>
+				<div>Вскрытие дверей – ключевой вид нашей деятельности. Мы – профессионалы с многолетним опытом работы. Наш мастер вскроет дверь без ее повреждения, привезет новый замок и установит его.</div>
+				<div><a href="#" data-toggle="modal" data-target="#service-modal-doors">Подробнее</a></div>
+				<div class="_sb-i__info">
+					<div>Время прибытия</div>
+					<div>15-20 минут</div>
+					<div>Время работы</div>
+					<div>10-25 минут</div>
+					<div>Стоимость</div>
+					<div>от 1000 руб.</div>
 				</div>
-				
-				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					<hr class="h-line" />
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				<div class="_sb-i__rev">Вы можете оставить заявку на визит мастера<br> или позвонить по телефону <a href="tel:+79036371431">+7 (903) 637-14-31</a></div>
+				<div class="_sb-i__rev-btn">
+					<button type="button" class="btn-blue" data-toggle="modal" data-target="#review-modal">оставить заявку</button>
 				</div>
-				
-				<div class="clear" ></div>
-			
 			</div>
 		</div>
 	</div>
-	
-	<div class="grid grid-12 flex" >
-	<div class="grid-row inline space-between" >
-		<div class="f-box clmn-3 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-		<div class="f-box clmn-2 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		<div class="f-box clmn-1 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-		<div class="f-box clmn-4 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		<div class="f-box clmn-2 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-		<div class="f-box clmn-4 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		<div class="f-box clmn-4 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		<div class="f-box clmn-4 " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-	</div>
-</div>
-	
-		
-	<div class="fluid-block line-gallery " data-lg-vis="3" data-md-vis="3" data-sm-vis="2" data-xs-vis="1" >
-		<div class="adaptive-block margin-center grid grid-12" >
-			
-			<div class="grid-row img-block " >
-				
-				<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
-					<a href="#image" class="image hover-scale " ></a>
-					<div class="title" >red</div>
+</div>  
+
+		<div class="service-repair service-item" id="service-repair">
+	<div class="container">
+		<div class="_sb-i__flex">			
+			<div class="_sb-i__content _sb-i__right">
+				<h2 class="_sb-i__heading">Замена и ремонт замков</h2>
+				<div>Мастер заменит дверной замок на новый или установит любой, купленный вами. Врежем такой же замок, какой был у Вас прежде, или другой из ассортимента – по желанию. Установим замок в металлическую, деревянную, пластиковую или межкомнатную дверь.</div>
+				<div><a href="#" data-toggle="modal" data-target="#service-modal-doors">Подробнее</a></div>
+				<div class="_sb-i__info">
+					<div>Время прибытия</div>
+					<div>15-20 минут</div>
+					<div>Время работы</div>
+					<div>10-25 минут</div>
+					<div>Стоимость</div>
+					<div>от 1000 руб.</div>
 				</div>
-				<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
-					<a href="#image" class="image hover-scale " ></a>
-					<div class="title" >sock</div>
+				<div class="_sb-i__rev">Вы можете оставить заявку на визит мастера<br> или позвонить по телефону <a href="tel:+79036371431">+7 (903) 637-14-31</a></div>
+				<div class="_sb-i__rev-btn">
+					<button type="button" class="btn-blue" data-toggle="modal" data-target="#review-modal">оставить заявку</button>
 				</div>
-				<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
-					<a href="#image" class="image hover-scale " ></a>
-					<div class="title" >tower</div>
-				</div>
-				<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
-					<a href="#image" class="image hover-scale " ></a>
-					<div class="title" >script</div>
-				</div>
-				
-				<div class="clear" ></div>
 			</div>
 		</div>
-		
-		<!--
-		<div class="arrow-block zi zi-top " >
-			<a href="#left" class="btn-arrow left" ><span class="picture" ></span></a>
-			<a href="#right" class="btn-arrow right" ><span class="picture" ></span></a>
-		</div>
-		-->
-		
-		<a class="btn-arrow left zi zi-top " href="#left" ></a>
-		<a class="btn-arrow right zi zi-top " href="#right" ></a>
-
 	</div>
-	
-	
-	<a class="go-to-top active" href=".fecss"></a>
+</div>  
 
-</body>
+		<div class="service-car service-item"  id="service-car">
+	<div class="container">
+		<div class="_sb-i__flex">			
+			<div class="_sb-i__content _sb-i__left">
+				<h2 class="_sb-i__heading">Вскрытие автомобильных дверей</h2>
+				<div>Мастер без повреждений откроет дверь автомобиля. Используем только профессиональный инструмент. Внимание! Вскрытие происходит только при наличии документов на авто. Если их нет или они остались в автомобиле, вскрытие происходит в присутствии участкового инспектора.</div>
+				<div><a href="#" data-toggle="modal" data-target="#service-modal-doors">Подробнее</a></div>
+				<div class="_sb-i__info">
+					<div>Время прибытия</div>
+					<div>15-20 минут</div>
+					<div>Время работы</div>
+					<div>10-25 минут</div>
+					<div>Стоимость</div>
+					<div>от 1000 руб.</div>
+				</div>
+				<div class="_sb-i__rev">Вы можете оставить заявку на визит мастера<br> или позвонить по телефону <a href="tel:+79036371431">+7 (903) 637-14-31</a></div>
+				<div class="_sb-i__rev-btn">
+					<button type="button" class="btn-blue" data-toggle="modal" data-target="#review-modal">оставить заявку</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>  
+
+		<div class="phone-info-block">
+	<div class="_bpi__flex">
+		<div>
+			<div class="_bpi__heading">Телефоны для справок</div>
+			<div class="_bpi__phone"><a href="tel:+74862781431">+7 (4862) 78-14-31</a></div>
+			<div class="_bpi__phone"><a href="tel:+79036371431">+7 (903) 637-14-31</a></div>
+		</div>
+	</div>
+</div>
+
+		<div class="blog-block">
+	<div class="container">
+		<div class="_bb__heading-block">
+			<h3 class="_bb__heading">Последние статьи из блога</h3>
+			<a href="/blog.html" class="_bb__more">Все статьи</a>
+		</div>
+		<div class="_bb__list">
+			<article class="_bb__item _bb__list-item">
+				<div class="_bb__item-inner _bb__list-item-inner">
+					<div class="_bb__item-time _bb__list-item-time">29.01.2016</div>
+					<h4 class="_bb__item-heading _bb__list-item-heading">Что особенного в электромагнитных замках?</h4>
+					<div class="_bb__item-read _bb__list-item-read"><a href="/blog-item.html">Читать далее</a></div>
+				</div>				
+			</article>
+			<article class="_bb__item _bb__list-item">
+				<div class="_bb__item-inner _bb__list-item-inner">
+					<div class="_bb__item-time _bb__list-item-time">29.01.2016</div>
+					<h4 class="_bb__item-heading _bb__list-item-heading">Что особенного в электромагнитных замках?</h4>
+					<div class="_bb__item-read _bb__list-item-read"><a href="/blog-item.html">Читать далее</a></div>
+				</div>				
+			</article>
+			<article class="_bb__item _bb__list-item">
+				<div class="_bb__item-inner _bb__list-item-inner">
+					<div class="_bb__item-time _bb__list-item-time">29.01.2016</div>
+					<h4 class="_bb__item-heading _bb__list-item-heading">Что особенного в электромагнитных замках?</h4>
+					<div class="_bb__item-read _bb__list-item-read"><a href="/blog-item.html">Читать далее</a></div> 
+				</div>				
+			</article>
+		</div>
+	</div>
+</div>
+		
+		<footer class="footer-block">
+	<div class="container">
+		<div class="_bf__flex">
+			<div class="_bf__copyright">
+				&copy; 2012-2016. Все права защищены.
+			</div>
+			<div class="_bf__dorohovdesign">
+				<a href="http://www.dorohovdesign.ru/" target="_blank">Создание сайта</a>
+				<a href="http://www.dorohovdesign.ru/" target="_blank"><img src="/img/dorohovdesign.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<div class="modal fade service-modal" id="service-modal-doors" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="_sm__scroll-flex">					
+					<div class="_sm__preview">
+						<img src="/img/index/modal-doors.jpg" alt="">
+						<!-- <img src="/img/index/modal-repair.jpg" alt="">
+						<img src="/img/index/modal-car.jpg" alt=""> -->
+					</div>
+					<div class="_sm__content">
+						<div id="overflow-container" class="scroll-hide _sm__scroll-hide" >
+							<div class="overflow-container scroll-element _sm__scroll-element">
+								<div class="overflowed scroll-overflow _sm__scroll-overflow">
+									<div class="_sm__content-inner">
+											<h3 class="_sm__heading">Вскрытие замков дверей</h3>
+											<div>Никто не застрахован от ситуации, когда подойдя в очередной раз к своей двери, Вы не сможете открыть замок. Дверь захлопнулась, вы остались снаружи, а ваши ключи – внутри. Или Вы их потеряли, где-то забыли, или же у Вас их украли. Ситуаций может быть много, проблема одна - дверь закрыта, и открывание замков никак не осуществить.</div>
+											<div>Что делать в такой ситуации? Прежде всего, не надо паниковать!Никто не застрахован от ситуации, когда подойдя в очередной раз к своей двери, Вы не сможете открыть замок. Дверь захлопнулась, вы остались снаружи, а ваши ключи – внутри. Или Вы их потеряли, где-то забыли, или же у Вас их украли. Ситуаций может быть много, проблема одна - дверь закрыта, и открывание замков никак не осуществить.</div>
+											<div>Что делать в такой ситуации? Прежде всего, не надо паниковать!Никто не застрахован от ситуации, когда подойдя в очередной раз к своей двери, Вы не сможете открыть замок. Дверь захлопнулась, вы остались снаружи, а ваши ключи – внутри. Или Вы их потеряли, где-то забыли, или же у Вас их украли. Ситуаций может быть много, проблема одна - дверь закрыта, и открывание замков никак не осуществить.</div>
+											<div>Что делать в такой ситуации? Прежде всего, не надо паниковать!</div>
+											<div>Не пытайтесь открыть замок самостоятельно при помощи подручных средств, не надо звать друзей и других обывателей, которые повредят дверь. Современные замки обладают повышенной защитой от взлома, и вскрыть замок "просто так" зачастую не получается. Самостоятельное вскрытие замков часто приводит к появлению необходимости восстанавливать дверь или менять ее на новую. Взлом двери так обходится намного дороже, чем разовый вызов квалифицированного специалиста, который без повреждений исполнит открытие дверей и возможно сохранит замок, который будет работать и дальше.</div>
+											<div>Вскрытие дверей – ключевой вид нашей деятельности. В таком деле, как взлом замков в Орле, мы профессионалы с многолетним опытом работы.</div>
+											<div>Потеряли ключи или захлопнулась дверьНаши специалисты могут для Вас вскрыть дверь с испорченным замком без ее повреждения. После того, как произойдет открытие замков, может потребоваться только замена пришедшего в негодность дверного замка.</div>
+											<div>Если Вы потеряли ключи или вдруг у Вас захлопнулась дверь, то перед тем как осуществить вскрытие дверей в г. Орел, наш мастер обязательно поинтересуется юридическими моментами (прописка, свидетельство о собственности, договор аренды).</div>
+											<div>Бывают случаи, при которых мы отказываемся проводить вскрытие замков. Взломать замок нельзя, например, при конфликтной ситуации, возникающей между родственниками, когда один член семьи, находящийся внутри, отказывается впускать другого. Даже если Вам удастся вызвать мастера, он все равно не начнет взлом замков. </div>
+											<div>В результате судебных разбирательств открыть замок можно исключительно по решению суда. При вскрывании замков должны присутствовать судебные приставы, а также участковый инспектор, а заявитель должен предъявить исполнительный лист. Если данные условия соблюдены, мастер сможет взломать замок на законных основаниях.</div>
+											<div>Кроме того, если у вас нет при себе ключей и документов, если соседи Вас не узнают - то специалист взломать замок откажется.</div>
+											<div>Обратите внимание: у нас можно не только заказать вскрытие двери в Орле, но и провести вскрытие сейфов.</div>
+											<div>Мы надеемся, что у Вас не сложились какие-либо обстоятельства, препятствующие провести аварийное вскрытие замков в г. Орел.</div>
+											<div>Круглосуточный вызов по телефону в Орле: +7 (903) 637-14-31</div>
+									</div>									
+								</div>
+							</div> 
+						</div>
+						<div class="scroll-container vertical right" data-target="#overflow-container" >
+							<div class="scroll-line" >
+								<div class="scroll" ></div>
+							</div>
+						</div>
+					</div>					
+				</div>
+	  		</div>
+	  	</div>
+	</div>
+</div>
+
+		<div class="modal fade review-modal" id="review-modal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="_sm__scroll-flex">					
+					<div class="_rm__preview">
+						<img src="/img/index/review-preview.jpg" alt="">
+					</div>
+					<div class="_rm__content">
+						<h3 class="_rm__heading">Заявка на визит мастера</h3> 
+						<div>Оставьте номер телефона, и мы свяжемся с Вами через 3 минуты</div>
+						<form action="">
+							<div class="_rm__input"><input type="tel" placeholder="Ваш телефон"></div>
+							<div class="_rm__btn"><button type="submit" class="btn-blue">отправить заявку</button></div>
+						</form>
+					</div>					
+				</div>
+	  		</div>
+	  	</div>
+	</div>
+</div>
+
+	</body>
 </html>

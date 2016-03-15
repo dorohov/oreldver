@@ -1,0 +1,51 @@
+.phone-info-block{
+	//opacity: @opacity;
+	background: url('@{url-path-img}/bg-info.jpg') no-repeat center;
+	height: 680px;
+	padding: 30px 0;
+	text-align: center;
+	.mixin-headings(
+		@font-family: @square-light, 
+		@font-size: 48px, 
+		@line-height: 60px,
+		@color: @white);
+	a{
+		color: @white;
+		text-decoration: none;
+
+	}
+}
+._bpi__flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+._bpi__heading{
+	&:before{
+		content: '';
+		background: url('@{url-path-img}/icon/icon-phone-white.png') no-repeat center;
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: 0 auto 65px;
+	}
+	&:after{
+		content: '';
+		width: 70px;
+		height: 3px;
+		background: @white;
+		display: block;
+		margin: 30px auto 50px;
+	}
+}
+._bpi__phone{
+	margin-bottom: 10px;
+	a{
+		.mixin-headings(
+			@font-family: @square-medium, 
+			@font-size: 60px, 
+			@line-height: 70px,
+			@color: @white);
+	}
+}
