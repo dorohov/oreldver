@@ -179,19 +179,54 @@
 		}
 	}
 }
-.can-close {
-	position:relative;
+.btn {
+	#fe.color(@c-hex-b);
+	#fe.bg(@c-hex-w);
+	#fe.underline(none);
+	/*outline:1px @c-hex-b solid;*/
+	padding:0.5em;
+	transition:all @trans-speed ease;
 	
-	.close-btn {
-		position:absolute;
-		right:1em;
-		top:1em;
-		width:1em;
-		height:1em;
-		background-size:cover;
-		#fe.brep();
-		#fe.bpos();
-		#fe.bi('.can-close/close-btn.png');
+	&:hover {
+		/*#fe.color(@c-hex-w);
+		#fe.bg(@c-hex-b);*/
+	}
+	
+	&:focus {
+		
+	}
+	
+	&:active {
+		
+	}
+	
+	&:visited {
+		
+	}
+	
+	
+	&.inline {
+		display:inline-block;
+	}
+	
+	&.as-block {
+		display:block;
+		width:100%;
+	}
+	
+	&.as-link {
+		display:inline-block;
+		outline:none;
+		padding:initial;
+		#fe.underline(initial);
+		#fe.color(inherit);
+		#fe.bg(transparent);
+		
+		&:hover {
+			#fe.underline();
+			#fe.color(inherit);
+			#fe.bg(transparent);
+		}
 	}
 	
 	
@@ -244,54 +279,19 @@
 	}
 	*/
 }
-.btn {
-	#fe.color(@c-hex-b);
-	#fe.bg(@c-hex-w);
-	#fe.underline(none);
-	/*outline:1px @c-hex-b solid;*/
-	padding:0.5em;
-	transition:all @trans-speed ease;
+.can-close {
+	position:relative;
 	
-	&:hover {
-		/*#fe.color(@c-hex-w);
-		#fe.bg(@c-hex-b);*/
-	}
-	
-	&:focus {
-		
-	}
-	
-	&:active {
-		
-	}
-	
-	&:visited {
-		
-	}
-	
-	
-	&.inline {
-		display:inline-block;
-	}
-	
-	&.as-block {
-		display:block;
-		width:100%;
-	}
-	
-	&.as-link {
-		display:inline-block;
-		outline:none;
-		padding:initial;
-		#fe.underline(initial);
-		#fe.color(inherit);
-		#fe.bg(transparent);
-		
-		&:hover {
-			#fe.underline();
-			#fe.color(inherit);
-			#fe.bg(transparent);
-		}
+	.close-btn {
+		position:absolute;
+		right:1em;
+		top:1em;
+		width:1em;
+		height:1em;
+		background-size:cover;
+		#fe.brep();
+		#fe.bpos();
+		#fe.bi('.can-close/close-btn.png');
 	}
 	
 	
@@ -748,115 +748,6 @@
 	}
 	*/
 }
-.phone-info-block{
-	//opacity: @opacity;
-	background: url('@{url-path-img}/bg-info.jpg') no-repeat center;
-	height: 680px;
-	padding: 30px 0;
-	text-align: center;
-	.mixin-headings(
-		@font-family: @square-light, 
-		@font-size: 48px, 
-		@line-height: 60px,
-		@color: @white);
-	a{
-		color: @white;
-		text-decoration: none;
-	}
-	@media @media-size-xs{
-		font-size: 40px;
-		line-height: 52px;
-		height: auto;
-	}
-}
-._bpi__flex{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	@media @media-size-xs{
-		height: auto;
-	}
-}
-._bpi__heading{
-	&:before{
-		content: '';
-		background: url('@{url-path-img}/icon/icon-phone-white.png') no-repeat center;
-		width: 100px;
-		height: 100px;
-		display: block;
-		margin: 0 auto 65px;
-	}
-	&:after{
-		content: '';
-		width: 70px;
-		height: 3px;
-		background: @white;
-		display: block;
-		margin: 30px auto 50px;
-	}
-	@media @media-size-xs{
-		&:before{
-			background-size: 60px;
-			height: 60px;
-			margin: 0 auto 35px;
-		}
-		&:after{
-			margin: 30px auto;
-		}
-	}
-}
-._bpi__phone{
-	margin-bottom: 10px;
-	a{
-		.mixin-headings(
-			@font-family: @square-medium, 
-			@font-size: 60px, 
-			@line-height: 70px,
-			@color: @white);		
-		@media @media-size-xs{
-			font-size: 30px;
-			line-height: 42px;
-		}
-	}
-}
-.footer-block{
-	//opacity: @opacity;
-	background: rgb(4, 67, 111);
-	font-family:  @square-light;
-	color: rgb(65, 151, 212); 
-	font-size: 18px;
-	padding: 17px 0;
-	a{
-		color: rgb(65, 151, 212);
-		&:hover{
-			color: rgb(65, 151, 212);
-		}
-	}
-	@media @media-size-xs {
-		font-size: 14px;
-	}
-}
-._bf__flex{
-	display: flex;
-	justify-content: space-between;
-}
-._bf__dorohovdesign{
-	img{
-		margin-left: 10px;
-		display: inline-block; 
-		
-	}
-	@media @media-size-xs {
-		max-width: 110px;
-		img{margin: 0}
-	}
-}
-._bf__copyright{
-	@media @media-size-xs {
-		span{display: block;}
-	}
-}
 .header-block{
 	//opacity: @opacity;
 	background: @white;    
@@ -1112,6 +1003,115 @@
 			margin: 0 auto 5px;
 			display: block;
 		}
+	}
+}
+.phone-info-block{
+	//opacity: @opacity;
+	background: url('@{url-path-img}/bg-info.jpg') no-repeat center;
+	height: 680px;
+	padding: 30px 0;
+	text-align: center;
+	.mixin-headings(
+		@font-family: @square-light, 
+		@font-size: 48px, 
+		@line-height: 60px,
+		@color: @white);
+	a{
+		color: @white;
+		text-decoration: none;
+	}
+	@media @media-size-xs{
+		font-size: 40px;
+		line-height: 52px;
+		height: auto;
+	}
+}
+._bpi__flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	@media @media-size-xs{
+		height: auto;
+	}
+}
+._bpi__heading{
+	&:before{
+		content: '';
+		background: url('@{url-path-img}/icon/icon-phone-white.png') no-repeat center;
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: 0 auto 65px;
+	}
+	&:after{
+		content: '';
+		width: 70px;
+		height: 3px;
+		background: @white;
+		display: block;
+		margin: 30px auto 50px;
+	}
+	@media @media-size-xs{
+		&:before{
+			background-size: 60px;
+			height: 60px;
+			margin: 0 auto 35px;
+		}
+		&:after{
+			margin: 30px auto;
+		}
+	}
+}
+._bpi__phone{
+	margin-bottom: 10px;
+	a{
+		.mixin-headings(
+			@font-family: @square-medium, 
+			@font-size: 60px, 
+			@line-height: 70px,
+			@color: @white);		
+		@media @media-size-xs{
+			font-size: 30px;
+			line-height: 42px;
+		}
+	}
+}
+.footer-block{
+	//opacity: @opacity;
+	background: rgb(4, 67, 111);
+	font-family:  @square-light;
+	color: rgb(65, 151, 212); 
+	font-size: 18px;
+	padding: 17px 0;
+	a{
+		color: rgb(65, 151, 212);
+		&:hover{
+			color: rgb(65, 151, 212);
+		}
+	}
+	@media @media-size-xs {
+		font-size: 14px;
+	}
+}
+._bf__flex{
+	display: flex;
+	justify-content: space-between;
+}
+._bf__dorohovdesign{
+	img{
+		margin-left: 10px;
+		display: inline-block; 
+		
+	}
+	@media @media-size-xs {
+		max-width: 110px;
+		img{margin: 0}
+	}
+}
+._bf__copyright{
+	@media @media-size-xs {
+		span{display: block;}
 	}
 }
 //
@@ -1457,6 +1457,7 @@
 ._bp__flex{
 	display: flex;
 	margin: 0 -15px 65px;
+	align-items: flex-start; 
 	@media @media-size-xs{
 		flex-wrap: wrap;
 	}
@@ -1551,7 +1552,8 @@
 	}
 	&:hover{
 		._sb__item-preview{
-			background-size: auto 110%; 
+			//background-size: 120% auto; 
+			background-size: auto 170% ; 
 
 			@media @media-size-xs{
 				background-size: cover; 
@@ -1608,7 +1610,8 @@
     transition: background-size .5s ease;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 150%;
+    //background-size: 110% auto;
 	@media @media-size-xs{
    		background-size: cover;
 	}
