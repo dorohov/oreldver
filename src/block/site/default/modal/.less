@@ -5,18 +5,33 @@
 }
 ._sm__scroll-hide{
 	height: 484px;
+	@media @media-size-xs{
+		height: 380px;
+	}
+	@media @media-size-xs and (orientation:landscape){
+		height: 230px;
+	}
 }
 ._sm__scroll-element{
 	width: 110%;
 	height: 107%;	
+	@media @media-size-xs{    
+		height: 103%;
+	}
 }
 ._sm__scroll-overflow{
 	padding-right: 10%;
+	@media @media-size-xs{
+		padding-right: 15%; 
+	}
 }
 ._sm__preview{
 	padding-right: 30px;
 	max-width: 310px;
 	width: 100%;
+	@media @media-size-xs{
+		display: none;
+	}
 }
 ._sm__content{
 	width: 100%;
@@ -34,11 +49,25 @@
 		@line-height: 50px,
 		@color: lighten(@black, 13.8%));
 	margin: -10px 0 10px 0;
+	@media @media-size-xs{
+		font-size: 26px;
+		line-height: 38px;
+		margin: 0px 0 10px;
+	}
+}
+
+.modal-body{
+	@media @media-size-xs{
+		padding: 50px 20px 20px 30px;
+	}
 }
 //
 .review-modal{
 	.modal-body{
 		padding: 50px 25px 50px 0px;
+		@media @media-size-xs{
+			padding: 50px 30px 30px 30px;
+		}
 	}
 }
 ._rm__heading{
@@ -54,6 +83,15 @@
 		height: 3px;
 		background: @blue;
 		margin: 25px 0 30px;
+	}
+	@media @media-size-xs{
+		font-size: 38px;
+		line-height: 40px;
+	}
+}
+._rm__preview{
+	@media @media-size-xs{
+		display: none;
 	}
 }
 ._rm__content{
@@ -98,6 +136,9 @@
 		right: 20px;
 		background: url('@{url-path-img}/icon/icon-phone-grey.png') no-repeat center;
 		transform: translateY(-50%) translateX(-50%); 
+		@media @media-size-xs{
+			right: 0;
+		}
 	}
 }
 ._rm__btn{

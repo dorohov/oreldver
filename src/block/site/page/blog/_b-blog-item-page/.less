@@ -2,6 +2,9 @@
 	//opacity: @opacity;
 	background: @white;
 	padding: 42px 0 80px;
+	@media @media-size-xs{
+		padding: 35px 0;
+	}
 }
 ._bpi__inner{
 	max-width: 860px;
@@ -14,11 +17,19 @@
 	display: flex;
     margin-top: 30px;
     padding-top: 25px;
+	@media @media-size-xs{
+		flex-wrap: wrap;
+	}     
 }
 ._bpi__nav-item{
 	width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+	@media @media-size-xs{
+		padding: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
 	a{
 		text-decoration: none;
 		.mixin-headings(
@@ -42,5 +53,8 @@
 	&.right{
 		text-align: right;
     	padding-right: 0px;
+		@media @media-size-xs{
+			text-align: center;
+		}
 	}
 }

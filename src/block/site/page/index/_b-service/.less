@@ -1,6 +1,9 @@
 .service-block{
 	//opacity: @opacity;
 
+	@media @media-size-xs{
+		height: auto!important;
+	}
 	@media @media-size-sm{
 		height: 500px!important;
 	}
@@ -34,7 +37,7 @@
 			background-size: auto 110%; 
 
 			@media @media-size-xs{
-				background-size: auto 150%; 
+				background-size: cover; 
 			}
 		}
 	}
@@ -90,7 +93,7 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
 	@media @media-size-xs{
-   		background-size: auto 150%;
+   		background-size: cover;
 	}
 }
 ._sb__item-heading{
@@ -138,7 +141,11 @@
 .service-doors{
 	//opacity: @opacity;
 	background: @white url('@{url-path-img}/index/bg-service-item-doors.png') no-repeat 81% top;
-	padding: 65px 0 95px;
+	padding: 65px 0 95px;	
+	@media @media-size-xs{
+		background: @white;
+		padding: 45px 0;	
+	}
 	@media @media-size-sm{
 	    background-position: 108% 0;
 		background-size: 260px;
@@ -160,6 +167,10 @@
 		display: flex;
 		justify-content: flex-end;
 	}	
+	@media @media-size-xs{
+		padding: 45px 0;	
+		background: darken(@white, 4.5%);
+	}
 	@media @media-size-sm{
 		background-position: -20% -10%;
 		background-size: 410px;
@@ -186,12 +197,19 @@
 	padding: 65px 0 90px;
 	._sb-i__left{
 		width: 59%;
+		@media @media-size-xs{
+			width: 100%;
+		}
 		@media @media-size-sm{
 			width: 100%;
 		}
 		@media @media-size-md{
 			width: 70%;
 		}
+	}
+	@media @media-size-xs{
+		background: @white;
+		padding: 45px 0;	
 	}
 	@media @media-size-sm{    
 		background-position: 165% 56%;
@@ -219,6 +237,10 @@
 		@line-height: 36px,
 		@color: lighten(@black, 13.8%)
 	); 
+	@media @media-size-xs{
+		font-size: 20px;
+		line-height: 32px;
+	}
 
 }
 ._sb-i__content{
@@ -235,6 +257,9 @@
 }
 ._sb-i__left{
 	width: 50%;
+	@media @media-size-xs{
+		width: 100%;
+	}
 	@media @media-size-sm{
 		width: 75%;
 	}
@@ -244,6 +269,9 @@
 }
 ._sb-i__right{
 	width: 57.3%;
+	@media @media-size-xs{
+		width: 100%;
+	}
 	@media @media-size-sm{
 		width: 60%;
 	}
@@ -261,6 +289,10 @@
 		background: @blue;
 		display: block;
 		margin: 25px 0 30px;
+	}
+	@media @media-size-xs{
+		font-size: 30px;
+		line-height: 44px;
 	}
 }
 ._sb-i__info{
@@ -282,10 +314,20 @@
 			padding-left: 25px;			
 		}
 	}
+	@media @media-size-xs{
+		margin: 30px 0!important;
+		font-size: 18px;
+		line-height: 24px;
+		padding: 15px 20px 5px;
+		max-width: 330px;
+	}
 }
 ._sb-i__rev{
 	font-family: @square-bold;
 	margin-bottom: 30px!important;
+	@media @media-size-xs{
+    	max-width: 260px!important;
+	}
 }
 ._sb-i__rev-btn{
 	width: 265px;

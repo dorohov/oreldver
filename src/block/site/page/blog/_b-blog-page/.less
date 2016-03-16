@@ -8,10 +8,22 @@
 ._bp__flex{
 	display: flex;
 	margin: 0 -15px 65px;
+	@media @media-size-xs{
+		flex-wrap: wrap;
+	}
 }
 ._bp__col{
 	width: 33.333333%;
 	padding: 0 15px;
+	@media @media-size-xs{
+		width: 100%;
+	}
+	@media @media-size-sm {
+		width: 50%;
+		&:last-child{
+			display: none;
+		}
+	}
 }
 ._bp__list-item{
 	margin-bottom: 30px;
