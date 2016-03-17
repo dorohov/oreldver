@@ -32,14 +32,36 @@
 		position: relative;
 		z-index: 5;
 	}
+	&:after{
+		content: '';
+		background: fadeout(@black, 70%); 
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0; 
+		transition: background 0.2s ease;
+	}
+	&:focus{
+		text-decoration: none;
+	}
 	&:hover{
+		text-decoration: none;
+		&:after{
+			background: fadeout(@black, 85%);
+		}
 		._sb__item-preview{
 			//background-size: 120% auto; 
 			background-size: auto 170% ; 
-
+			
 			@media @media-size-xs{
 				background-size: cover; 
 			}
+		}
+		.btn-white-nobg{
+			background: @white;
+			color: lighten(@black, 13.8%);
 		}
 	}
 	&.item-doors{
